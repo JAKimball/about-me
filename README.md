@@ -32,3 +32,17 @@
 - Push yourself in your CSS work. Experiment, try some layout feature or technique that you have not tried before (maybe a sticky header or sticky footer, icon fonts such as FontAwesome, etc.) or just try to refine your layout/style as much as possible. We will not cover responsive design until Code 301, but if you have background in it, implement a breakpoint for a mobile view.
 - Ensure that all of your text elements meet enhanced recommendations for contrast ratios. Use Chrome’s inspector to verify your color theme is worthy of two green check marks.
 - Test your HTML/CSS for accessibility with Chrome’s built-in Accessibility Auditing tool. Note that you’ll have to deploy your site somehow, and make some changes to your code to get the auditing tools to see your HTML code. You can disable the other audit checks when you run your audit. Include an image of your accessability report score in your submission’s README.md file.
+
+## Getting Started
+
+Refer to the instructions under the “Setup and Documentation” heading above.
+
+## Submission Instructions
+
+Your instructional team will grade your assignment, and give you feedback.
+
+1. Submit the link to your repo for this project’s work
+2. Add a comment to this submission with answers to the following questions.
+    - How did this go, overall?
+    - What observations or questions do you have about what you’ve learned so far?
+    - How long did it take you to complete this assignment? And, before you started, how long did you think it would take you to complete this assignment?
