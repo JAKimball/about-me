@@ -24,8 +24,16 @@ var totalQuestionCount = qCountYesNo;
 var correctResponseCount = 0;
 
 // Find out who is playing
+// var promptWho = prompt('Welcome to my page.  What is your name?');
+// console.log('Who: ' + promptWho);
+
+function askName(){
+
 var promptWho = prompt('Welcome to my page.  What is your name?');
 console.log('Who: ' + promptWho);
+}
+
+askName();
 
 // In a loop ask each of the Yes/No questions.
 // Within that loop, use a nested loop to validate if response was Y or N.
@@ -34,10 +42,20 @@ for (var i = 0 ; i < qCountYesNo; i++) {
   console.log (i + questionAndAnswersList[i][indexOfQuestion]);
   userResponse = '';
 
+
   while ((userResponse === 'Y' || userResponse === 'N') === false) {
-    userResponse = prompt('(Y/n) ' + questionAndAnswersList[i][indexOfQuestion]).toUpperCase[0];
-    console.log('Response to Y/n Q' + i + ': ' + userResponse);
+    userResponse = prompt('(Y/n) ' + questionAndAnswersList[i][indexOfQuestion]).toUpperCase(0);
+    console.log('Response to Y/n Q' + (i+1) + ': ' + userResponse);
     
+  }
+
+  if(userResponse === 'Y'){
+    alert(questionAndAnswersList [i] [indexOfYesReply]);
+  }
+
+  else {
+    alert(questionAndAnswersList [i] [indexOfNoReply]);
+
   }
 
   console.log('Final response to Y/n Q' + i + ': ' + userResponse);
