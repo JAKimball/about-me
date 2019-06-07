@@ -2,7 +2,6 @@
 
 // Question Counts (qCount...)
 var qcOnlyJoking = 0;
-var qCountYesNo = questionAndAnswersList.length;
 var totalQuestionCount = qCountYesNo;
 var correctResponseCount = 0;
 
@@ -22,6 +21,7 @@ var questionAndAnswersList = [
   ['Question 6?', 'Y', 'Q6 Reply if Yes.', 'Q6 Reply if No', NaN, NaN],
   ['Question 7?', 'Y', 'Q7 Reply if Yes.', 'Q7 Reply if No', NaN, NaN]
 ];
+var qCountYesNo = questionAndAnswersList.length;
 
 console.log(questionAndAnswersList);
 
@@ -41,7 +41,7 @@ function askYesNo(questionNumber1B) {
   }
 
   if (userResponse === questionAndAnswersList[questionNumber1B - 1][indexOfCorrectResponse]) {
-    ++correctResponseCount
+    ++correctResponseCount;
   }
 
   if (userResponse === 'Y') {
@@ -59,8 +59,8 @@ function askYesNo(questionNumber1B) {
 function askYesNoQuestions() {
   var nextQuestion1B = 1; // The One-Based question number of the next question
 
-  while (isNaN(nextQuestion1B) = false) {
-    nextQuestion1B = askYesNo(nextQuestion1B) 
+  while (isNaN(nextQuestion1B) === false) {
+    nextQuestion1B = askYesNo(nextQuestion1B);
   }
 }
 
@@ -93,7 +93,6 @@ for (var i = 0; i < qCountYesNo; i++) {
     alert(questionAndAnswersList[i][indexOfNoReply]);
   }
 }
-
 
 function askNumberGuessingGame() {
   // This one's not polite
