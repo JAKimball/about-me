@@ -73,27 +73,6 @@ function askName() {
   console.log('Who: ' + promptWho);
 }
 
-// In a loop ask each of the Yes/No questions.
-// Within that loop, use a nested loop to validate if response was Y or N.
-var userResponse = '';
-for (var i = 0; i < qCountYesNo; i++) {
-  console.log(i + questionAndAnswersList[i][indexOfQuestion]);
-  userResponse = '';
-
-  while ((userResponse === 'Y' || userResponse === 'N') === false) {
-    userResponse = prompt(
-      '(Y/n) ' + questionAndAnswersList[i][indexOfQuestion]
-    ).toUpperCase(0);
-    console.log('Response to Y/n Q' + (i + 1) + ': ' + userResponse);
-  }
-
-  if (userResponse === 'Y') {
-    alert(questionAndAnswersList[i][indexOfYesReply]);
-  } else {
-    alert(questionAndAnswersList[i][indexOfNoReply]);
-  }
-}
-
 function askNumberGuessingGame() {
   // This one's not polite
   var fairGame = false;
